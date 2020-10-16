@@ -65,7 +65,9 @@ class InfoListViewController: UIViewController {
     }
     
     func fetchInformation() {
+        ActivityIndicator.shared.showLoading(on: self)
         viewModel.getAllInfoRows(completionHandler: { (status, message) in
+            ActivityIndicator.shared.stopLoading()
             if status {
                 self.title = self.viewModel.navigationBarTitle
                 self.infoTableView.reloadData()
