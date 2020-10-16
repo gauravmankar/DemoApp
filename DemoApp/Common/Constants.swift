@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+typealias SuccessBlock = (Bool, String) -> Void
+typealias FailureBlock = (Bool, String) -> Void
+
+/// App constants
+struct AppConstants {
+    static var APPNAME = "Demo App"
+}

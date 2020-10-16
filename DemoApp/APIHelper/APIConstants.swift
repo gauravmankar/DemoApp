@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
+class APIConstants: NSObject {
+    static let baseUrl = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
+}
